@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Image Loader</title>
+        <script src="js/jquery.js"></script>
+        <script language="javascript">
+            $('document').ready(function(e) {
+                $(".preLoader").fadeOut(5500); 
+                $(".content").fadeIn(4000);
+            }); 
+        </script> 
+       <style>
+        .content{
+            display: none;
+        }
+	   .preLoader{ position: fixed;left: 0px;top: 0px;width:100%;height:100%;z-index: 9999;background: url(images/Preloader_3.gif) 50% 50% repeat rgb(249,249,249);
+       }  
+	   </style>
+
+    </head>
+    <body>
+        <div class="preLoader"></div>  
+    </body>
+</html>
